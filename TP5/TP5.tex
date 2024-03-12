@@ -1,0 +1,170 @@
+\documentclass[12pt,a4paper]{article}
+
+\sloppy
+
+\setlength{\textwidth}{16cm}
+\setlength{\textheight}{24cm}
+\addtolength{\hoffset}{-1cm}
+\addtolength{\voffset}{-2cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{ae}
+\usepackage{graphicx}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{multicol, array}
+\decimalpoint
+
+
+\usepackage{sectsty}
+%\allsectionsfont{\mdseries \raggedright}
+\sectionfont{\fontsize{14}{15}\selectfont}
+%\chapterfont{\large\sc\centering}
+%\chaptertitlefont{\centering}
+\subsectionfont{\fontsize{12}{15}\selectfont}
+\subsubsectionfont{\fontsize{12}{15}\selectfont}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[slantedGreek]{mathpazo} %% ver psnfss2e
+\usepackage{pifont}
+\usepackage{newcent}
+\usepackage[small, bf, margin=20pt, tableposition=top]{caption}
+
+\usepackage{fancyhdr}
+
+
+\setlength{\parskip}{2mm}
+
+
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Ejercicio N$^o$}
+
+\pagestyle{fancy}
+\lhead{Mecánica del Continuo 2023 \\  Licenciatura en Física}
+\rhead{\includegraphics[width=1cm]{/home/juan/Documentos/Docencia/unsl.jpg}}
+\vspace*{0.25cm}
+
+
+\begin{document}
+
+\begin{center}
+\textbf{Trabajo Práctico N$^o$ 5: \\ Sólido Lineal Elástico}
+\end{center}
+
+\medskip
+
+\section{Para hacer entre \textit{todes} - Clase TP5}
+\subsection*{Muestra gratis}
+Sabiendo que el acero tiene un límite elástico $t_A = 600 MPa$, se quiere diseñar una barra ($\mu = 82.0 GPa$ y $\lambda = 117.8 GPa$) de sección circular y de $5\, m$ de longitud, que sea capaz de sostener una masa $m=10^4 kg$, que trabaje dentro del régimen de sólido lineal elástico. También son requisitos que la elongación  de la varilla, al colgarse el peso, no supere los 3 cm y que el esfuerzo máximo de corte en cualquier plano no supere $0.8$ veces el límite elástico antes mencionado.
+
+\vspace{0.25cm}
+
+\noindent a) Calcular el radio mínimo de la barra que cumpla con los tres requisitos.
+
+\noindent b) Calcular el radio después de colgar la masa requerida.
+
+
+\section{Ejercicios para usted}
+%EJERCICIO 1
+ \begin{theorem}
+El siguiente tensor representa el estado de esfuezo de un punto en un sólido: 
+ 
+ \begin{center}
+$[T] \; = \;
+\left(\begin{smallmatrix}
+1 & 2 & 3\\
+2 & 4 & 5\\
+3 & 5 & 0
+\end{smallmatrix}\right)
+MPa
+$
+ \end{center}
+
+En cada uno de los planos normales a los vectores unitarios $\mathbf{e_1, e_2, e_3}$, (a) ¿cuál es el esfuerzo normal? y (b) ¿cuál es el esfuerzo tangencial total?
+
+\end{theorem}
+
+\bigskip
+
+%\noindent \textbf{Ejercicio 1:} \newline
+
+\begin{theorem}
+
+Mostrar que si para un s\'olido el\'astico lineal, se cumple la relación 
+\[
+T_{ij}=\dfrac{\partial U}{\partial E_{ij}}
+\]
+\noindent luego se cumple la relaci\'on de simetr\'ia  $C_{ijkl}=C_{klij}$ para el tensor elasticidad.
+
+\end{theorem}
+
+
+%\noindent \textbf{Ejercicio 2:} \newline
+\begin{theorem}
+
+Utilizando la bibliografía:
+
+\begin{itemize}
+
+\item[a)] Derivar las expresiones del m\'odulo de Young, la raz\'on de Poisson, el módulo de volumen y el módulo de corte como funci\'on de los coeficientes de Lame.
+
+
+\end{itemize}
+
+
+\end{theorem}
+
+%\noindent \textbf{Ejercicio 3:} \newline
+\begin{theorem}
+
+Realizar los ejercicios de la bibliografía (seg\'un nomenclatura de Lai $4^{a}$ edición): 5.4, 5.7, 5.8, 5.9, 5.10, 5.11, 5.13, 5.14, 5.17.
+
+\end{theorem}
+
+
+\pagebreak
+
+%\noindent \textbf{Ejercicio 5:} \newline
+
+
+\begin{theorem}
+
+Una barra cilíndrica circular de sección A es sometida a estiramiento por una fuerza P en cada extremo.
+
+(a) Determinar el esfuerzo normal y tangencial sobre un plano cuyo vector normal forma un ángulo $\alpha$ con el eje de la barra.
+
+(b) ¿Para qué valor de $\alpha$ la magnitudes de esfuerzo normal y tangencial son iguales?
+
+(c) Si la capacidad de carga de la barra está determinada por la condición de que el esfuerzo tangencial sobre un plano definido para $\alpha=\alpha_0$ sea menor que $\tau_0$, ¿cuál es el máximo valor posible de la fuerza P?
+
+
+\end{theorem}
+
+
+%\noindent \textbf{Ejercicio 6:} \newline
+
+\begin{theorem}
+
+Un eje cilíndrico de acero es sometido a torsión mediante un par de cuplas de 2700 $Nm$. El esfuerzo máximo permitido de estiramiento es de $0,124$ GPa.
+
+(a) Derive el estado de esfuerzo en la barra.
+
+(b) Si el esfuerzo tangencial máximo permitido es 0,6 veces el esfuerzo de estiramiento máximo, ¿cuál es el diámetro mínimo necesario para que el eje no se fracture?
+
+
+\end{theorem} 
+
+%\noindent \textbf{Ejercicio 4:} \newline
+\begin{theorem}
+
+Realizar los ejercicios de la bibliografía*  (seg\'un nomenclatura de Lai $4^{a}$ edición):5.38, 5.39, 5.41, 5.49.
+Estos ejercicios son problemas elastodinámicos (ondas). Sólo para examen final.
+
+\end{theorem}
+
+\end{document}
+
